@@ -10,11 +10,7 @@ import static org.fest.assertions.api.Assertions.*;
 @RunWith(TestRunners.WithDefaults.class)
 public class QualifiersTest {
 
-	@Test
-	  public void noop() {
-		  
-	  }
-  /*@Test
+  @Test
   public void shouldGetFromClass() throws Exception {
     String expectedQualifiers = "en" + TestRunners.WithDefaults.SDK_TARGETED_BY_MANIFEST;
     assertThat(shadowOf(application.getAssets()).getQualifiers()).isEqualTo(expectedQualifiers);
@@ -29,5 +25,5 @@ public class QualifiersTest {
   @Test @Config(qualifiers = "de")
   public void getQuantityString() throws Exception {
     assertThat(application.getResources().getQuantityString(R.plurals.minute, 2)).isEqualTo(application.getResources().getString(R.string.minute_plural));
-  }*/
+  }
 }
