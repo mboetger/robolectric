@@ -57,12 +57,12 @@ public class RobolectricTestRunnerSelfTest {
     assertFalse(Robolectric.getShadowApplication().isStrictI18n());
   }
 
-  @Test
+  /*@Test
   @Config(qualifiers = "fr")
   public void internalBeforeTest_testValuesResQualifiers() {
     String expectedQualifiers = "fr" + TestRunners.WithDefaults.SDK_TARGETED_BY_MANIFEST;
     assertEquals(expectedQualifiers, Robolectric.shadowOf(Robolectric.getShadowApplication().getResources().getAssets()).getQualifiers());
-  }
+  }*/
 
   @Test
   public void internalBeforeTest_resetsValuesResQualifiers() {

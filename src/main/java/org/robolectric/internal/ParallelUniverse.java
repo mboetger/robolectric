@@ -80,7 +80,7 @@ public class ParallelUniverse implements ParallelUniverseInterface {
     }
 
     ShadowResources.setSystemResources(systemResourceLoader);
-    String qualifiers = addVersionQualifierToQualifiers(config.qualifiers());
+    String qualifiers = config.qualifiers();//addVersionQualifierToQualifiers(config.qualifiers());
     Resources systemResources = Resources.getSystem();
     Configuration configuration = systemResources.getConfiguration();
     shadowOf(configuration).overrideQualifiers(qualifiers);

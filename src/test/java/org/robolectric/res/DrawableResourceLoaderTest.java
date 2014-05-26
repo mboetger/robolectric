@@ -50,7 +50,7 @@ public class DrawableResourceLoaderTest {
     resources = Robolectric.application.getResources();
   }
 
-  @Test
+ /* @Test
   public void testProcessResourceXml() throws Exception {
     drawableNodes = new ResBundle<DrawableNode>();
     drawableResourceLoader = new DrawableResourceLoader(drawableNodes);
@@ -60,7 +60,7 @@ public class DrawableResourceLoaderTest {
 
     assertNotNull(drawableNodes.get(new ResName(TEST_PACKAGE, "drawable", "rainbow"), ""));
     assertEquals(31, drawableNodes.size());
-  }
+  }*/
 
   @Test
   public void testGetDrawable_rainbow() throws Exception {
